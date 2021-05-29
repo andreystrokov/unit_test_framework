@@ -1,6 +1,4 @@
-//
-// Created by ASUS on 29.04.2021.
-//
+
 #include "test_runner.h"
 void Assert(bool b, const string& hint) {
     AssertEqual(b, true, hint);
