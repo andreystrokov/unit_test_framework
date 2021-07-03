@@ -1,8 +1,4 @@
 #pragma once
-#ifndef UNTITLED22_TEST_RUNNER_H
-#define UNTITLED22_TEST_RUNNER_H
-
-#endif //UNTITLED22_TEST_RUNNER_H
 #include <map>
 #include <set>
 #include <sstream>
@@ -10,9 +6,6 @@
 #include <vector>
 
 using namespace std;
-inline void Assert(bool b, const string& hint) {
-    AssertEqual(b, true, hint);
-}
 template<class T, class U>
 void AssertEqual(const T& t, const U& u, const string& hint = {}) {
     if (t != u) {
@@ -23,6 +16,9 @@ void AssertEqual(const T& t, const U& u, const string& hint = {}) {
         }
         throw runtime_error(os.str());
     }
+}
+inline void Assert(bool b, const string& hint) {
+    AssertEqual(b, true, hint);
 }
 template<class T>
 ostream& operator<< (ostream& ostream1,const vector <T> v){
