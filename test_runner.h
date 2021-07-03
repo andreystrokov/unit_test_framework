@@ -83,4 +83,3 @@ AssertEqual(x,y,os.str());          \
 }
 #define RUN_TEST(tr,func) \
     tr.RunTest(func, #func)
-#include "test_runner.h"
