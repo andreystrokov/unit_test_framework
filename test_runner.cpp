@@ -1,6 +1,8 @@
 //
 // Created by ASUS on 29.04.2021.
 //
+#define RUN_TEST(tr,func) \
+    tr.RunTest(func, #func)
 #include "test_runner.h"
 void Assert(bool b, const string& hint) {
     AssertEqual(b, true, hint);
