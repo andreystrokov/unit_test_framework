@@ -1,5 +1,5 @@
 # unit_test_framework
-1)include "test_runner.cpp" in your code;
+1)include "test_runner.h" in your code;
 2) write tests, using macro ASSERT_EQUAL like:
    void TestSum() {
     int i = 4;
